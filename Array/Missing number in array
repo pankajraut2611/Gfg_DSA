@@ -1,0 +1,18 @@
+
+// User function Template for Java
+
+class Solution {
+    int MissingNumber(int array[], int n) {
+        // Your Code Here
+        
+        int totalsum = (n*(n+1))/2 ;
+        int sum = 0;
+        for(int index=0 ; index < n-1; index++){
+            sum = sum + array[index];
+        }
+
+       int missingNo = totalsum - sum;
+       return missingNo ; 
+        
+    }
+}
